@@ -1,7 +1,9 @@
-package src.com.gof23.iterator.impl;
+package src.com.gof23.iterator2.impl;
 
-import src.com.gof23.iterator.Aggregate;
-import src.com.gof23.iterator.Iterator;
+import src.com.gof23.iterator2.Aggregate;
+import src.com.gof23.iterator2.Iterator;
+
+import java.util.ArrayList;
 
 /**
  * @program: GoF23
@@ -10,24 +12,22 @@ import src.com.gof23.iterator.Iterator;
  * @create: 2019-04-17 22:06
  **/
 public class BookShelf implements Aggregate {
-    private Book[] books;
-    private int last = 0;
+    private ArrayList books;
 
-    public BookShelf(int maxsize) {
-        this.books = new Book[maxsize];
+    public BookShelf(int initialsize) {
+        this.books = new ArrayList(initialsize);
     }
 
     public Book getBookAt(int index) {
-        return books[index];
+        return (Book) books.get(index);
     }
 
     public void appendBook(Book book) {
-        this.books[last] = book;
-        last++;
+        books.add(book);
     }
 
     public int getLength() {
-        return last;
+        return books.size();
     }
 
     @Override

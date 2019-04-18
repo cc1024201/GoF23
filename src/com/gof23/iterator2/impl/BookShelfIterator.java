@@ -1,6 +1,6 @@
-package src.com.gof23.iterator.impl;
+package src.com.gof23.iterator2.impl;
 
-import src.com.gof23.iterator.Iterator;
+import src.com.gof23.iterator2.Iterator;
 
 /**
  * @program: GoF23

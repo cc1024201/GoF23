@@ -1,4 +1,4 @@
-package src.com.gof23.adapter.impl;
+package src.com.gof23.adapter2.impl;
 
 /**
  * @program: GoF23
