@@ -2,6 +2,8 @@ package src.com.gof23.c8abstractfactory;
 
 import src.com.gof23.c8abstractfactory.factory.Factory;
 import src.com.gof23.c8abstractfactory.factory.Link;
+import src.com.gof23.c8abstractfactory.factory.Page;
+import src.com.gof23.c8abstractfactory.factory.Tray;
 
 /**
  * @program: GoF23
@@ -24,6 +26,25 @@ public class Main {
 
         Link us_yahoo = factory.createLink("Yahoo", "http://www.yahoo.com/");
         Link jp_yahoo = factory.createLink("Yahoo!Japan", "http://www.yahoo.co.jp/");
-        Link excite = factory.createLink()
+        Link excite = factory.createLink("Excite", "http://www.excite.com/");
+        Link google = factory.createLink("Google", "http://www.google.com/");
+
+        Tray traynews = factory.createTray("日报");
+        traynews.add(people);
+        traynews.add(gmw);
+
+        Tray trayyahoo = factory.createTray("Yahoo！");
+        trayyahoo.add(us_yahoo);
+        trayyahoo.add(jp_yahoo);
+
+        Tray traysearch = factory.createTray("检索引擎");
+        traysearch.add(trayyahoo);
+        traysearch.add(excite);
+        traysearch.add(google);
+
+        Page page = factory.createPage("LinkPage", "杨文轩");
+        page.add(traynews);
+        page.add(traysearch);
+        page.output();
     }
 }
