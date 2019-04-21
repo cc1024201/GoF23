@@ -1,4 +1,4 @@
-package src.com.gof23.c19state;
+package src.com.gof23.c19state2;
 
 /**
  * @program: GoF23
@@ -19,6 +19,8 @@ public class DayState implements State {
     public void doClock(Context context, int hour) {
         if(hour <9 || 17 <=hour){
             context.changeState(NightState.getInstance());
+        }else if(12 <= hour && hour < 13){
+            context.changeState(NoonState.getInstance());
         }
     }
 

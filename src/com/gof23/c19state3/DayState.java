@@ -1,4 +1,4 @@
-package src.com.gof23.c19state;
+package src.com.gof23.c19state3;
 
 /**
  * @program: GoF23
@@ -30,6 +30,7 @@ public class DayState implements State {
     @Override
     public void doAlarm(Context context) {
         context.callSecurityCenter("按下警铃（白天）");
+        context.changeState(UrgentState.getInstance());
     }
 
     @Override
