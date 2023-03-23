@@ -33,3 +33,28 @@
 - 策略模式 Strategy Pattern
 - 模板方法模式 Template Method Pattern
 - 访问者模式 Visitor Pattern
+
+/**
+ * xxx模式
+ * 定义：xxx, xxx
+ * 类型：xxx
+ *
+ * 适用场景：
+ * xxx
+ *
+ * 优点：
+ * xxx
+ *
+ * 缺点：
+ * xxx
+ *
+ * 结构：
+ * xxx
+ *
+ * 案例：
+ * xxx
+ * 代码实现：
+ * 以xxx为例，xxx, xxx
+ */
+把上述注释补充完整
+进行代码实现，要可以运行,代码要有注释，要有测试用例
