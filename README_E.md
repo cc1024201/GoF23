@@ -56,5 +56,6 @@ This is a project about the implementation of design patterns in Java. It includ
  * Code implementation:
  * Taking xxx as an example, xxx, xxx
  */
-Complete the above comments
-Perform code implementation, the code should be complete, runnable, and have comments and test methods
+
+1. Complete the above comments.
+2. Output the code implementation code, the code must be complete and runnable, and there must be test cases.
