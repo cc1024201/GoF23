@@ -1,6 +1,6 @@
-# Design Patterns in Java
+# Design Patterns
 
-This is a project about the implementation of design patterns in Java. It includes 23 classic design patterns, each with corresponding code implementation and detailed explanation.
+This is a project about the implementation of design patterns. It includes 23 classic design patterns, each with corresponding code implementation and detailed explanation.
 
 ## Creational Patterns
 
